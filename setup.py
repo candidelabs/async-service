@@ -8,15 +8,15 @@ from setuptools import (
 extras_require = {
     'test': [
         "hypothesis==4.44.4",
-        "pytest==5.4.1",
+        "pytest==7.3.1",
         "pytest-xdist",
         "tox==3.14.6",
     ],
     'test-asyncio': [
-        "pytest-asyncio>=0.10.0,<0.11",
+        "pytest-asyncio==0.21",
     ],
     'test-trio': [
-        "pytest-trio>=0.6.0,<0.7.0",
+        "pytest-trio==0.8.0",
     ],
     'lint': [
         "black==19.3b",
@@ -64,7 +64,7 @@ setup(
     include_package_data=True,
     install_requires=[
         "async-generator>=1.10,<2",
-        "trio>=0.16,<0.17",
+        "trio>=0.16,<=0.22",
         "trio-typing>=0.5,<0.6",
     ],
     python_requires='>=3.6, <4',
